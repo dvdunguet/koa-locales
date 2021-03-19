@@ -174,10 +174,10 @@ module.exports = function (app, options) {
       localeOrigin = 'cookie';
     }
 
-    // // 3. Header
+    // 3. Header
     // if (!locale) {
-    //   // Accept-Language: zh-CN,zh;q=0.5
-    //   // Accept-Language: zh-CN
+      // Accept-Language: zh-CN,zh;q=0.5
+      // Accept-Language: zh-CN
     //   let languages = this.acceptsLanguages();
     //   if (languages) {
     //     if (Array.isArray(languages)) {
@@ -200,7 +200,6 @@ module.exports = function (app, options) {
     //     }
     //   }
     // }
-    
     // all missing, set it to defaultLocale
     if (!locale) {
       locale = defaultLocale;
