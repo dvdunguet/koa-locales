@@ -174,37 +174,37 @@ module.exports = function (app, options) {
       localeOrigin = 'cookie';
     }
 
-    // 3. Header
+    // // 3. Header
+    // if (!locale) {
+    //   // Accept-Language: zh-CN,zh;q=0.5
+    //   // Accept-Language: zh-CN
+    //   let languages = this.acceptsLanguages();
+    //   if (languages) {
+    //     if (Array.isArray(languages)) {
+    //       if (languages[0] === '*') {
+    //         languages = languages.slice(1);
+    //       }
+    //       if (languages.length > 0) {
+    //         for (let i = 0; i < languages.length; i++) {
+    //           const lang = formatLocale(languages[i]);
+    //           if (resources[lang] || localeAlias[lang]) {
+    //             locale = lang;
+    //             localeOrigin = 'header';
+    //             break;
+    //           }
+    //         }
+    //       }
+    //     } else {
+    //       locale = languages;
+    //       localeOrigin = 'header';
+    //     }
+    //   }
+    // }
+    
+    // all missing, set it to defaultLocale
     if (!locale) {
-      // Accept-Language: zh-CN,zh;q=0.5
-      // Accept-Language: zh-CN
-      let languages = this.acceptsLanguages();
-      if (languages) {
-        if (Array.isArray(languages)) {
-          if (languages[0] === '*') {
-            languages = languages.slice(1);
-          }
-          if (languages.length > 0) {
-            for (let i = 0; i < languages.length; i++) {
-              const lang = formatLocale(languages[i]);
-              if (resources[lang] || localeAlias[lang]) {
-                locale = lang;
-                localeOrigin = 'header';
-                break;
-              }
-            }
-          }
-        } else {
-          locale = languages;
-          localeOrigin = 'header';
-        }
-      }
-
-      // all missing, set it to defaultLocale
-      if (!locale) {
-        locale = defaultLocale;
-        localeOrigin = 'default';
-      }
+      locale = defaultLocale;
+      localeOrigin = 'default';
     }
 
     // cookie alias
