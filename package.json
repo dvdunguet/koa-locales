@@ -1,6 +1,6 @@
 {
   "name": "koa-locales",
-  "version": "1.12.0",
+  "version": "0.0.1",
   "description": "koa locales, i18n solution for koa",
   "main": "index.js",
   "files": [
@@ -36,14 +36,14 @@
     "pedding": "^1.1.0",
     "supertest": "^2.0.1"
   },
-  "homepage": "https://github.com/koajs/locales",
+  "homepage": "https://github.com/dvdunguet/koa-locales",
   "repository": {
     "type": "git",
-    "url": "git://github.com/koajs/locales.git",
-    "web": "https://github.com/koajs/locales"
+    "url": "git://github.com/dvdunguet/koa-locales.git",
+    "web": "https://github.com/dvdunguet/koa-locales"
   },
   "bugs": {
-    "url": "https://github.com/koajs/locales/issues"
+    "url": "https://github.com/dvdunguet/koa-locales/issues"
   },
   "keywords": [
     "koa-locales",
