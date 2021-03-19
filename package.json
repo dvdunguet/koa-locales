@@ -1,6 +1,6 @@
 {
   "name": "koa-locales",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "koa locales, i18n solution for koa",
   "main": "index.js",
   "files": [
@@ -58,6 +58,6 @@
   "ci": {
     "version": "4, 6, 8, 10, 12"
   },
-  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
+  "author": "<dvdunguet@gmail.com>",
   "license": "MIT"
 }
