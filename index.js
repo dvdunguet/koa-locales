@@ -200,6 +200,7 @@ module.exports = function (app, options) {
     //     }
     //   }
     // }
+
     // all missing, set it to defaultLocale
     if (!locale) {
       locale = defaultLocale;
